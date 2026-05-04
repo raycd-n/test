@@ -1,0 +1,162 @@
+.container {
+    /* background-color: aqua; */
+    /* max-width: 1200px; */
+    width: 1200px;
+    margin: 2.5% auto;
+    padding: 0 15px;
+}
+
+.navbar {
+    /* background-color: blue; */
+    padding: 10px 25%;
+    margin-bottom: 50px;
+}
+
+.nav-menu {
+    background-color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 999px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+}
+
+.nav-menu li {
+    /* background-color: 555; */
+    padding: 8px 16px;
+    border-radius: 999px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-menu li:hover {
+    /* background-color: f3f3f3; */
+    background-color: black;
+    color: white;
+}
+
+.content {
+    /* background-color: chartreuse; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 70%;
+}
+
+.content-left {
+    /* background-color: chocolate; */
+    /* margin: 0 0 0 100px; */
+    padding: 10px;
+}
+
+.badge {
+    background-color: f1f1f1;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.content-left h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.content-left h2 {
+    font-size: 1.5rem;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-1 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+}
+
+.btn-2 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid black;
+}
+
+hr {
+  margin: 10px 0;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.content-right {
+    /* background-color: coral; */
+    /* margin: 0 100px 0 0; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content-right img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    .content {
+        grid-template-columns: 1fr; /* jadi 1 kolom */
+        text-align: center;
+    }
+
+    .content-left h1 {
+        font-size: 2rem;
+    }
+
+    .content-left {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+
+    }
+
+    .content-right {
+        order: -1; /* gambar pindah ke atas */
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}
